@@ -25,9 +25,9 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/Write.msg"
+  "msg/WriteData.msg"
   "srv/GetData.srv"
-  # DEPENDENCIES settei # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
+  "srv/AddThreeInts.srv"
 )
 
 if(BUILD_TESTING)
