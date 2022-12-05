@@ -27,7 +27,6 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/WriteData.msg"
   "srv/GetData.srv"
-  "srv/AddThreeInts.srv"
 )
 
 if(BUILD_TESTING)
